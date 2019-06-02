@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6927A1C322A3C45F00E7045B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927A1C222A3C45F00E7045B /* Answer.swift */; };
+		6927A1C622A408AC00E7045B /* SizeAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927A1C522A408AC00E7045B /* SizeAdjustable.swift */; };
+		6927A1C922A408BC00E7045B /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927A1C822A408BC00E7045B /* FontManager.swift */; };
+		6927A1CB22A40CDE00E7045B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6927A1CA22A40CDE00E7045B /* QuestionViewController.swift */; };
 		69E43C4422A3B86700D46269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C4322A3B86700D46269 /* AppDelegate.swift */; };
-		69E43C4622A3B86700D46269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C4522A3B86700D46269 /* ViewController.swift */; };
+		69E43C4622A3B86700D46269 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C4522A3B86700D46269 /* WelcomeViewController.swift */; };
 		69E43C4922A3B86700D46269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E43C4722A3B86700D46269 /* Main.storyboard */; };
 		69E43C4B22A3B86A00D46269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69E43C4A22A3B86A00D46269 /* Assets.xcassets */; };
 		69E43C4E22A3B86A00D46269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69E43C4C22A3B86A00D46269 /* LaunchScreen.storyboard */; };
@@ -21,9 +24,12 @@
 
 /* Begin PBXFileReference section */
 		6927A1C222A3C45F00E7045B /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		6927A1C522A408AC00E7045B /* SizeAdjustable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeAdjustable.swift; sourceTree = "<group>"; };
+		6927A1C822A408BC00E7045B /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		6927A1CA22A40CDE00E7045B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		69E43C4022A3B86700D46269 /* Initial Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Initial Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E43C4322A3B86700D46269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69E43C4522A3B86700D46269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69E43C4522A3B86700D46269 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		69E43C4822A3B86700D46269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69E43C4A22A3B86A00D46269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69E43C4D22A3B86A00D46269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +51,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6927A1C422A408AC00E7045B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6927A1C522A408AC00E7045B /* SizeAdjustable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6927A1C722A408BC00E7045B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6927A1C822A408BC00E7045B /* FontManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		69E43C3722A3B86700D46269 = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				69E43C5522A3B87600D46269 /* App */,
+				6927A1C722A408BC00E7045B /* Managers */,
 				69E43C5922A3B93200D46269 /* Models */,
+				6927A1C422A408AC00E7045B /* Protocols */,
 				69E43C5822A3B8B800D46269 /* Resources */,
 				69E43C5622A3B89300D46269 /* View Controllers */,
 				69E43C5722A3B8A800D46269 /* Views */,
@@ -85,7 +109,8 @@
 		69E43C5622A3B89300D46269 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				69E43C4522A3B86700D46269 /* ViewController.swift */,
+				69E43C4522A3B86700D46269 /* WelcomeViewController.swift */,
+				6927A1CA22A40CDE00E7045B /* QuestionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -191,9 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E43C5F22A3BA6300D46269 /* QuestionType.swift in Sources */,
-				69E43C4622A3B86700D46269 /* ViewController.swift in Sources */,
+				6927A1C622A408AC00E7045B /* SizeAdjustable.swift in Sources */,
+				69E43C4622A3B86700D46269 /* WelcomeViewController.swift in Sources */,
 				69E43C5D22A3BA2D00D46269 /* Question.swift in Sources */,
+				6927A1C922A408BC00E7045B /* FontManager.swift in Sources */,
 				69E43C6122A3BA8500D46269 /* Questions.swift in Sources */,
+				6927A1CB22A40CDE00E7045B /* QuestionViewController.swift in Sources */,
 				6927A1C322A3C45F00E7045B /* Answer.swift in Sources */,
 				69E43C4422A3B86700D46269 /* AppDelegate.swift in Sources */,
 				69E43C5B22A3B9C400D46269 /* Sex.swift in Sources */,

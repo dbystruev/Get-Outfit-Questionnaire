@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  QuestionViewController.swift
 //  Initial Quiz
 //
 //  Created by Denis Bystruev on 02/06/2019.
@@ -8,10 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class QuestionViewController: UIViewController {
     let questions = Questions.sample
-    
+}
+
+// MARK: - UIViewController
+extension QuestionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +23,4 @@ class ViewController: UIViewController {
             print()
         }
     }
-
-
 }
-
