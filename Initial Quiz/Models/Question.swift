@@ -11,8 +11,8 @@ class Question {
     let type: QuestionType
     
     init(
-        _ type: QuestionType,
-        sex: Sex = .both
+        sex: Sex = .both,
+        _ type: QuestionType
     ) {
         self.sex = sex
         self.type = type

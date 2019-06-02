@@ -17,7 +17,6 @@
 		69E43C5D22A3BA2D00D46269 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C5C22A3BA2D00D46269 /* Question.swift */; };
 		69E43C5F22A3BA6300D46269 /* QuestionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C5E22A3BA6300D46269 /* QuestionType.swift */; };
 		69E43C6122A3BA8500D46269 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C6022A3BA8500D46269 /* Questions.swift */; };
-		69E43C6322A3BAE500D46269 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E43C6222A3BAE500D46269 /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		69E43C5C22A3BA2D00D46269 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		69E43C5E22A3BA6300D46269 /* QuestionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionType.swift; sourceTree = "<group>"; };
 		69E43C6022A3BA8500D46269 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
-		69E43C6222A3BAE500D46269 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +114,6 @@
 				69E43C5C22A3BA2D00D46269 /* Question.swift */,
 				69E43C6022A3BA8500D46269 /* Questions.swift */,
 				69E43C5E22A3BA6300D46269 /* QuestionType.swift */,
-				69E43C6222A3BAE500D46269 /* Section.swift */,
 				69E43C5A22A3B9C400D46269 /* Sex.swift */,
 			);
 			path = Models;
@@ -196,7 +193,6 @@
 				69E43C5F22A3BA6300D46269 /* QuestionType.swift in Sources */,
 				69E43C4622A3B86700D46269 /* ViewController.swift in Sources */,
 				69E43C5D22A3BA2D00D46269 /* Question.swift in Sources */,
-				69E43C6322A3BAE500D46269 /* Section.swift in Sources */,
 				69E43C6122A3BA8500D46269 /* Questions.swift in Sources */,
 				6927A1C322A3C45F00E7045B /* Answer.swift in Sources */,
 				69E43C4422A3B86700D46269 /* AppDelegate.swift in Sources */,

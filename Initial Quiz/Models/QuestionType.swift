@@ -7,7 +7,9 @@
 //
 
 enum QuestionType {
-    case choice(question: String, answers: [Answer])
+    case choice(question: String, subtitle: String?, answers: [Answer])
+    case section(String, subtitle: String?)
     case text(String)
-    case title(String, subtitle: String?)
+    case textWithDetails(String, details: String)
+    case title(String, subtitle: String)
 }

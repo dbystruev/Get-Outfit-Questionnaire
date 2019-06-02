@@ -9,7 +9,9 @@
 import UIKit
 
 enum Answer {
+    case image(UIImage, title: String?)
     case imageLink(UIImage, url: URL)
+    case picker(String)
     case textLink(String)
     case text(String)
 }
