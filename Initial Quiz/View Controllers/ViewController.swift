@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let questions = Questions.sample
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        print(Date(), #line, #function)
+        for (index, question) in questions.enumerated() {
+            print("\(index): \(question.type)")
+            print()
+        }
     }
 
 
