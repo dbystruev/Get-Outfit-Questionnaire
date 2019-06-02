@@ -8,8 +8,9 @@
 
 enum QuestionType {
     case choice(question: String, subtitle: String?, answers: [Answer])
-    case section(String, subtitle: String?)
-    case text(String)
-    case textWithDetails(String, details: String)
+    case multiChoice(question: String, subtitle: String?, answers: [Answer])
+    case range(question: String, min: Int, max: Int)
+    case section(String?, subtitle: String?)
+    case text(String, details: String?)
     case title(String, subtitle: String)
 }
